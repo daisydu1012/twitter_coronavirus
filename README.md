@@ -98,8 +98,8 @@ one line per hashtag
     <td><img src="img/all.country.coronavirus.png" width="400"></td>
   </tr>
   <tr>
-    <td align="center"><b>Languages – Korean term</b></td>
-    <td align="center"><b>Countries – Korean term</b></td>
+    <td align="center"><b>Languages – #coronavirus(Korean)</b></td>
+    <td align="center"><b>Countries – #coronavirus(Korean)</b></td>
   </tr>
   <tr>
     <td><img src="img/all.lang.korean.png" width="400"></td>
