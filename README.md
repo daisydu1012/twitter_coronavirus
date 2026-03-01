@@ -3,7 +3,8 @@
 ## Overview
 This project analyzes 1.1 billion geotagged tweets from 2020 using a custom MapReduce pipeline written in Python and executed in parallel on a Linux compute server.
 The goal is to measure how selected hashtags (e.g., `#coronavirus`, `#코로나바이러스`) vary across countries, languages, and time.
-Each day of tweets is processed independently in the map phase and then aggregated into global results in the reduce phase, enabling scalable large-scale data analysis. This pipeline demonstrates how large-scale social media data can be processed efficiently to reveal global communication patterns during a major public health event.
+Each day of tweets is processed independently in the map phase and then aggregated into global results in the reduce phase, enabling scalable large-scale data analysis. This pipeline demonstrates how large-scale social media data can be processed efficiently to reveal global communication patterns during a major public health event. 
+This project showcases large-scale data engineering, parallel processing, and analytical visualization in a real-world setting.
 
 ---
 
@@ -17,10 +18,8 @@ Each day of tweets is processed independently in the map phase and then aggregat
 ---
 
 ## Dataset
-Location:
 
-/data/Twitter dataset/
-
+Location: `/data/Twitter dataset/`
 
 - ~1.1 billion geotagged tweets  
 - One compressed file per day  
@@ -39,11 +38,10 @@ For each day:
 python src/map.py --input_path <zip_file> --output_folder outputs/
 ```
 
-This step extracts hashtag counts by:
+This step extracts hashtag counts grouped by:
 
-language → .lang files
-
-country → .country files
+- language → `.lang` files  
+- country → `.country` files  
 
 All jobs were launched in parallel using:
 
@@ -71,11 +69,10 @@ python src/visualize.py --input_path <file> --key <hashtag>
 ### Alternative Reduce (Time Series)
 
 A second reduce pipeline generates time-series plots showing daily hashtag usage over the year.
-```
-x-axis: day of the year
-y-axis: number of tweets
-one line per hashtag
-```
+
+- x-axis: day of the year  
+- y-axis: number of tweets  
+- one line per hashtag  
 
 ## Key Features
 
@@ -85,8 +82,8 @@ one line per hashtag
 - Fault-tolerant long-running jobs with nohup  
 - Automated global aggregation and visualization  
 
-### Results:
-#### Top Hashtag Usage by Language and Country
+## Results:
+### Top Hashtag Usage by Language and Country
 
 <table>
   <tr>
@@ -108,7 +105,7 @@ one line per hashtag
 </table>
 
 
-#### Hashtag Usage Over Time (Task 4)
+### Hashtag Usage Over Time (Task 4)
 
 ![Hashtag trends over time](img/task4_languages.png)
 
