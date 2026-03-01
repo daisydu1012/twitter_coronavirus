@@ -91,3 +91,29 @@ Language distribution plots
 Country distribution plots
 
 Time-series hashtag trends
+
+### Results:
+## Top Hashtag Usage by Language and Country
+
+<table>
+  <tr>
+    <td align="center"><b>Languages – #coronavirus</b></td>
+    <td align="center"><b>Countries – #coronavirus</b></td>
+  </tr>
+  <tr>
+    <td><img src="img/all.lang.coronavirus.png" width="400"></td>
+    <td><img src="img/all.country.coronavirus.png" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Languages – Korean term</b></td>
+    <td align="center"><b>Countries – Korean term</b></td>
+  </tr>
+  <tr>
+    <td><img src="img/all.lang.korean.png" width="400"></td>
+    <td><img src="img/all.country.korean.png" width="400"></td>
+  </tr>
+</table>
+
+## Hashtag Usage Over Time (Task 4)
+
+![Hashtag trends over time](img/task4_languages.png)
