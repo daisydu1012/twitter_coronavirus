@@ -2,9 +2,7 @@
 
 ## Overview
 This project analyzes 1.1 billion geotagged tweets from 2020 using a custom MapReduce pipeline written in Python and executed in parallel on a Linux compute server.
-
 The goal is to measure how selected hashtags (e.g., `#coronavirus`, `#코로나바이러스`) vary across countries, languages, and time.
-
 Each day of tweets is processed independently in the map phase and then aggregated into global results in the reduce phase, enabling scalable large-scale data analysis.
 
 ---
@@ -37,8 +35,10 @@ The dataset is too large to process locally, so all computation was executed in 
 ### Map Phase
 For each day:
 
-```bash
+```
 python src/map.py --input_path <zip_file> --output_folder outputs/
+
+```
 
 This step extracts hashtag counts by:
 
@@ -47,22 +47,23 @@ language → .lang files
 country → .country files
 
 All jobs were launched in parallel using:
+```
 
 nohup ./run_maps.sh &
 
-```bash
+```
 
 ### Reduce Phase
 
 All daily outputs are combined into global totals:
 ```
-
 python src/reduce.py --input_path outputs/ --output_file reduce.lang
 python src/reduce.py --input_path outputs/ --output_file reduce.country
 Visualization
 ```
 
 Bar charts of the top 10 countries and languages for each hashtag are generated with:
+
 ```
 python src/visualize.py --input_path <file> --key <hashtag>
 ```
