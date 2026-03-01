@@ -75,7 +75,7 @@ x-axis: day of the year
 y-axis: number of tweets
 one line per hashtag
 
-### Key Features
+## Key Features
 
 - Scalable processing of 1.1B tweets using a custom MapReduce pipeline  
 - Fully parallel execution across hundreds of daily data files  
