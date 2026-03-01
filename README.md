@@ -71,9 +71,11 @@ python src/visualize.py --input_path <file> --key <hashtag>
 ### Alternative Reduce (Time Series)
 
 A second reduce pipeline generates time-series plots showing daily hashtag usage over the year.
+
 x-axis: day of the year
 y-axis: number of tweets
 one line per hashtag
+
 
 ## Key Features
 
