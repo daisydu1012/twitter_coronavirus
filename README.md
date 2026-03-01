@@ -37,7 +37,6 @@ For each day:
 
 ```
 python src/map.py --input_path <zip_file> --output_folder outputs/
-
 ```
 
 This step extracts hashtag counts by:
@@ -47,10 +46,9 @@ language → .lang files
 country → .country files
 
 All jobs were launched in parallel using:
+
 ```
-
 nohup ./run_maps.sh &
-
 ```
 
 ### Reduce Phase
