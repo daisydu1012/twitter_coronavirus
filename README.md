@@ -98,14 +98,15 @@ one line per hashtag
     <td><img src="img/all.country.coronavirus.png" width="400"></td>
   </tr>
   <tr>
-    <td align="center"><b>Languages – #coronavirus(Korean)</b></td>
-    <td align="center"><b>Countries – #coronavirus(Korean)</b></td>
+    <td align="center"><b>Languages – #코로나바이러스</b></td>
+    <td align="center"><b>Countries – #코로나바이러스</b></td>
   </tr>
   <tr>
     <td><img src="img/all.lang.korean.png" width="400"></td>
     <td><img src="img/all.country.korean.png" width="400"></td>
   </tr>
 </table>
+
 
 #### Hashtag Usage Over Time (Task 4)
 
