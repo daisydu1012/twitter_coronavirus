@@ -49,40 +49,41 @@ country → .country files
 All jobs were launched in parallel using:
 
 nohup ./run_maps.sh &
-Reduce Phase
+
+```bash
+
+### Reduce Phase
 
 All daily outputs are combined into global totals:
+```
 
 python src/reduce.py --input_path outputs/ --output_file reduce.lang
 python src/reduce.py --input_path outputs/ --output_file reduce.country
 Visualization
+```
 
 Bar charts of the top 10 countries and languages for each hashtag are generated with:
-
+```
 python src/visualize.py --input_path <file> --key <hashtag>
-Alternative Reduce (Time Series)
+```
 
+### Alternative Reduce (Time Series)
 A second reduce pipeline generates time-series plots showing daily hashtag usage over the year.
-
 x-axis: day of the year
-
 y-axis: number of tweets
-
 one line per hashtag
 
-Key Features
+
+### Key Features
 
 Parallel processing over hundreds of daily files
-
 Streaming JSON directly from compressed archives
-
 Fault-tolerant execution using nohup and background jobs
-
 Global aggregation via a custom reduce step
-
 Automated visualization of large-scale results
 
-Outputs
+
+### Outputs
 
 The project produces:
 
