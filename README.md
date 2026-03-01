@@ -108,6 +108,7 @@ one line per hashtag
 #### Hashtag Usage Over Time (Task 4)
 
 ![Hashtag trends over time](img/task4_languages.png)
+
 This time-series view highlights the temporal dynamics of COVID-19 discussions and allows comparison of hashtag adoption across languages.
 
 ## How to Reproduce
